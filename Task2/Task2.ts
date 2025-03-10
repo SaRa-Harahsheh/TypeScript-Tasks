@@ -17,19 +17,13 @@ let Data: person = { Name: "Omar", Age: 17 };
 // You are given an object that follows an interface Teacher with properties name and subjects (an array of subjects). Print all the subjects the teacher teaches.
 
 interface Teacher { name: string , subjects: string[]}
+let DetailsTeacher: Teacher = {name: "Ahmed",subjects: ["Mathematics", "Physics", "Chemistry"]};
 
-function Subjects(teach: Teacher): void {
-    console.log(`${teach.name} teaches:`);
+console.log(`${DetailsTeacher.name} teaches:`);
 
-    for (let i = 0; i < teach.subjects.length; i++) {
-        console.log(teach.subjects[i]);  // طباعة كل مادة في المصفوفة
-    }
+for (let i = 0; i < DetailsTeacher.subjects.length; i++) {
+    console.log(DetailsTeacher.subjects[i]); 
 }
-
-let teach: Teacher = {name: "Ahmed",subjects: ["Mathematics", "Physics", "Chemistry"]};
-
-Subjects(teach);
-
 
 //Task 3: Modify Object in an Array of Interfaces
 //You are given an array of Product interfaces, where each product has a name, price, and quantity. Write a script to decrease the price of each product by 15% if the quantity is greater than 5.

@@ -2,29 +2,25 @@
 //You are given an object that follows an interface Person with properties name and age. Check if the age is above 18 and print "Adult" if true, otherwise print "Minor."/*
 ;
 var Data = { Name: "Omar", Age: 17 };
-function print() {
-    if (Data.Age > 18) {
-        console.log("Adult");
-    }
-    else {
-        console.log("Minor");
-    }
-}
-print();
 if (Data.Age > 18) {
     console.log("Adult");
 }
 else {
     console.log("Minor");
 }
-function Subjects(teach) {
-    console.log("".concat(teach.name, " teaches:"));
-    for (var i = 0; i < teach.subjects.length; i++) {
-        console.log(teach.subjects[i]); // طباعة كل مادة في المصفوفة
+var DetailsTeacher = { name: "Ahmed", subjects: ["Mathematics", "Physics", "Chemistry"] };
+function Subjects(DetailsTeacher) {
+    console.log("".concat(DetailsTeacher.name, " teaches:"));
+    for (var i = 0; i < DetailsTeacher.subjects.length; i++) {
+        console.log(DetailsTeacher.subjects[i]);
     }
 }
-var teach = { name: "Ahmed", subjects: ["Mathematics", "Physics", "Chemistry"] };
-Subjects(teach);
+Subjects(DetailsTeacher);
+console.log("-----------------------------------------");
+console.log("".concat(DetailsTeacher.name, " teaches:"));
+for (var i = 0; i < DetailsTeacher.subjects.length; i++) {
+    console.log(DetailsTeacher.subjects[i]);
+}
 // Load products from local storage or initialize as an empty array
 var products = JSON.parse(localStorage.getItem("products") || "[]"); // the key is products
 // Use localStorage.getItem('products') to retrieve any existing products from local storage.
