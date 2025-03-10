@@ -11,6 +11,12 @@ function print() {
     }
 }
 print();
+if (Data.Age > 18) {
+    console.log("Adult");
+}
+else {
+    console.log("Minor");
+}
 function Subjects(teach) {
     console.log("".concat(teach.name, " teaches:"));
     for (var i = 0; i < teach.subjects.length; i++) {

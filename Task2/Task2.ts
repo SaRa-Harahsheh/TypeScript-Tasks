@@ -5,20 +5,13 @@
 interface person{ Name:string , Age :number};
 let Data: person = { Name: "Omar", Age: 17 };
 
-function print()
-{
-if (Data.Age>18){
-    console.log("Adult");
-    
-}
-else{
-    console.log("Minor");  
-}
-
-}
- print();
  
-
+ if (Data.Age>18){
+       console.log("Adult");   
+   }
+   else{
+       console.log("Minor"); 
+    }
 
 //  Task 2: Iterate Through an Array in an Interface
 // You are given an object that follows an interface Teacher with properties name and subjects (an array of subjects). Print all the subjects the teacher teaches.
